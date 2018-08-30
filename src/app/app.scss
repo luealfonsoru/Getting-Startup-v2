@@ -24,6 +24,11 @@
 	src: url($ionicons-font-path + "/Roboto/Roboto-Bold.ttf");	
 }
 
+@font-face{
+	font-family: Roboto-Light;
+	src: url($ionicons-font-path + "/Roboto/Roboto-Light.ttf")
+}
+
 @media (min-width: 768px) {
 	//.ion-page {
 		//margin-left: 30%;
