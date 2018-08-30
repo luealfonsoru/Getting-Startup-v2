@@ -30,7 +30,8 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  favorite:   #69BB7B
+  favorite:   #69BB7B,
+  whites:      #ffffff,
 );
 
 
@@ -51,3 +52,7 @@ $colors: (
 
 $ionicons-font-path: "../assets/fonts";
 @import "ionic.ionicons";
+
+.toolbar-title.toolbar-title-ios{
+  color: map-get($colors, whites);
+}

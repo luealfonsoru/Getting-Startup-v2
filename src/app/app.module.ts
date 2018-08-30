@@ -17,6 +17,8 @@ import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { MyApp } from './app.component';
 
 import { LoginPageModule } from '../pages/login/login.module';
+import { RegisterPageModule } from '../pages/register/register.module';
+import { ProfilePageModule } from '../pages/profile/profile.module';
 
 @NgModule({
 	declarations: [
@@ -25,13 +27,18 @@ import { LoginPageModule } from '../pages/login/login.module';
 	imports: [
 		BrowserModule,
 		HttpModule,
-		IonicModule.forRoot(MyApp),
+		IonicModule.forRoot(MyApp,
+			{
+				mode: 'ios',
+			}),
 		AgmCoreModule.forRoot(),
 		AngularFireModule.initializeApp(firebaseConfig.fire),
 		ComponentsModule,
 		GoogleMapsModule,
 		HomeModule,
 		LoginPageModule,
+		RegisterPageModule,
+		ProfilePageModule,
 		SlideBoxModule,
 		WordpressModule
 	],

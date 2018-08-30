@@ -17,13 +17,14 @@
 
 <ion-content>
     <div class="main-title">Inicia Sesión con tu Email</div>
-    <form class="my-form">
+    <div class="my-form">
       <ion-item>
-        <ion-input type="email" placeholder="Correo Electrónico"></ion-input>
+        <ion-input type="email" placeholder="Correo Electrónico" [(ngModel)]="user.email"></ion-input>
       </ion-item>
       <ion-item>
-          <ion-input type="password" placeholder="Contraseña"></ion-input>
+          <ion-input type="password" placeholder="Contraseña" [(ngModel)]="user.password"></ion-input>
         </ion-item>
-      <button class="login-button" ion-button type="submit" block style="text-transform: none;">Iniciar Sesión</button>
-    </form>
+      <button class="login-button" ion-button block style="text-transform: none;" (click)="login(user)">Iniciar Sesión</button>
+      <button class="login-button" ion-button block style="text-transform: none;" (click)="register()">Registrarse</button>
+      </div>
 </ion-content>

@@ -1,0 +1,11 @@
+page-register {
+    .text-input{
+        text-align: center; 
+        font-family: Roboto-Light;   
+    }
+
+}
+
+ion-header ion-icon.back-button-icon.icon {
+    color: map-get($colors, whites);
+}
