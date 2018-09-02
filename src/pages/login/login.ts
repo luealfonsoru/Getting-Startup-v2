@@ -25,7 +25,7 @@ async login(user: User){
   try{
     const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password).then(res =>{
       if(res.user){
-        this.navCtrl.setRoot('ProfilePage');
+        this.navCtrl.setRoot('MenuPage');
       }
     });
     console.log(result);

@@ -7,19 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title color="whites">Registrarse</ion-title>
+    <ion-title style="text-align: center">Registrarse</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+    <div class="main-title">Bienvenido/a a Getting Startup: para registrarte, por favor ingresa tu correo electrónico y crea una nueva contraseña:</div>
     <div class="my-form">
         <ion-item>
           <ion-input type="email" placeholder="Correo Electrónico" [(ngModel)]="user.email"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-input type="password" placeholder="Contraseña" [(ngModel)]="user.password"></ion-input>
+            <ion-input type="password" placeholder="Nueva Contraseña" [(ngModel)]="user.password"></ion-input>
           </ion-item>
           <button class="login-button" ion-button block style="text-transform: none;" (click)="register(user)">Registrarse</button>
         </div>

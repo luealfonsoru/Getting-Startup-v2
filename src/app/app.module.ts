@@ -19,6 +19,12 @@ import { MyApp } from './app.component';
 import { LoginPageModule } from '../pages/login/login.module';
 import { RegisterPageModule } from '../pages/register/register.module';
 import { ProfilePageModule } from '../pages/profile/profile.module';
+import { MenuPageModule } from '../pages/menu/menu.module';
+import { MessagesPageModule } from '../pages/messages/messages.module';
+import { ExplorePageModule } from '../pages/explore/explore.module';
+import { ProjectsPageModule } from '../pages/projects/projects.module';
+import { CreatePageModule } from '../pages/create/create.module';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
 	declarations: [
@@ -30,6 +36,7 @@ import { ProfilePageModule } from '../pages/profile/profile.module';
 		IonicModule.forRoot(MyApp,
 			{
 				mode: 'ios',
+				backBurronText: ''
 			}),
 		AgmCoreModule.forRoot(),
 		AngularFireModule.initializeApp(firebaseConfig.fire),
@@ -39,8 +46,14 @@ import { ProfilePageModule } from '../pages/profile/profile.module';
 		LoginPageModule,
 		RegisterPageModule,
 		ProfilePageModule,
+		MessagesPageModule,
+		ExplorePageModule,
+		ProjectsPageModule,
+		MenuPageModule,
 		SlideBoxModule,
-		WordpressModule
+		CreatePageModule,
+		WordpressModule,
+		AngularFireDatabaseModule
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
